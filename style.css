@@ -100,7 +100,7 @@ body {
   right: 0;
   background-color: var(--primary-blue);
   box-shadow: var(--shadow-md);
-  z-index: 1000;
+  z-index: 9998;
   transition: var(--transition);
 }
 
@@ -192,7 +192,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1002;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -780,7 +780,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-blue);
-    z-index: 1003;
+    z-index: 10000;
     padding-top: 140px;
     box-sizing: border-box;
     opacity: 0;
@@ -828,7 +828,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1001;
+    z-index: 10001;
   }
 
   /* Hero móvil */
@@ -1014,7 +1014,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    z-index: 1001;
+    z-index: 10001;
   }
 
   .nav {
@@ -1025,7 +1025,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-blue);
-    z-index: 1003;
+    z-index: 10000;
     padding-top: 120px;
     box-sizing: border-box;
     opacity: 0;

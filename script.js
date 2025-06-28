@@ -43,6 +43,10 @@ function initMobileMenu() {
             nav.classList.add('active');
             if (overlay) overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
+            
+            // Asegurar que el menú esté por encima de todo
+            nav.style.zIndex = '10000';
+            if (mobileMenuBtn) mobileMenuBtn.style.zIndex = '10001';
 
             // Cambiar icono del botón
             if (mobileMenuBtn) {
