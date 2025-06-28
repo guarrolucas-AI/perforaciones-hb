@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información técnica sobre depresión de napa - Perforaciones HB">
-    <title>Depresión de napan - Notas Técnicas | Perforaciones HB</title>
-    
+    <meta name="description" content="Información técnica sobre depresión de napa freática - Perforaciones HB">
+    <title>Depresión de Napa - Notas Técnicas | Perforaciones HB</title>
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../style.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -45,47 +45,250 @@
     </header>
 
     <!-- Contenido principal -->
-    <!-- Contenido principal -->
     <main class="main">
         <section class="technical-note-content">
             <div class="container">
                 <div class="note-header">
-                    <h1 class="note-main-title">Depresión de napa</h1>
-                    <p class="note-subtitle">Fenómeno de descenso del nivel freático y sus implicaciones</p>
+                    <h1 class="note-main-title">Depresión de Napa</h1>
+                    <p class="note-subtitle">Análisis del comportamiento hidráulico durante la extracción de agua subterránea</p>
                 </div>
 
                 <div class="note-body">
-                    <h2>Pozos para depresión de napa</h2>
-                    <p>Para deprimir la napa freática mediante perforaciones, se realizan pozos estratégicamente ubicados alrededor del área a desaguar. Estos pozos, equipados con bombas, extraen agua subterránea, reduciendo el nivel freático localmente. El diseño y la cantidad de pozos dependen de factores como la permeabilidad del suelo y el nivel deseado de depresión.</p>
+                    <h2>¿Qué es la depresión de napa?</h2>
+                    <p>La depresión de napa, también conocida como cono de depresión o zona de influencia, es el descenso del nivel freático que se produce alrededor de un pozo durante el bombeo. Este fenómeno crea una superficie cónica invertida con el vértice en el pozo bombeante, siendo fundamental para el diseño y operación eficiente de sistemas de extracción.</p>
 
-                    <h3>Proceso de depresión de napa freática mediante perforaciones</h3>
-                    <ol>
-                        <li><strong>Estudio geotécnico:</strong> Se analiza la permeabilidad del suelo y la profundidad de la napa para determinar la ubicación y cantidad de pozos necesarios.</li>
-                        <li><strong>Diseño del sistema:</strong> Se define la ubicación de los pozos, el diámetro de las perforaciones, el tipo de bombas a utilizar (sumergibles o centrífugas) y la profundidad de instalación.</li>
-                        <li><strong>Perforación de los pozos:</strong> Se realizan perforaciones con equipos especializados, como perforadoras rotativas o de percusión, dependiendo del terreno.</li>
-                        <li><strong>Instalación de equipos:</strong> Se colocan tuberías de revestimiento (<em>casing</em>) en los pozos para evitar el colapso de las paredes y facilitar la instalación de bombas. Se instala la bomba en el pozo y se conecta a la red de desagüe.</li>
-                        <li><strong>Pruebas y monitoreo:</strong> Se realizan pruebas de bombeo para determinar el caudal y la eficiencia del sistema. Se monitorea continuamente el nivel freático para asegurar la efectividad de la depresión.</li>
-                        <li><strong>Mantenimiento:</strong> Se realizan mantenimientos periódicos a las bombas y sistemas de desagüe para asegurar su correcto funcionamiento.</li>
-                    </ol>
+                    <h3>Conceptos fundamentales</h3>
+                    <h4>Nivel estático</h4>
+                    <p>Es el nivel del agua en el pozo cuando no hay bombeo, representando el equilibrio natural del acuífero.</p>
 
-                    <h3>Consideraciones importantes</h3>
+                    <h4>Nivel dinámico</h4>
+                    <p>Es el nivel del agua en el pozo durante el bombeo, siempre inferior al nivel estático.</p>
+
+                    <h4>Depresión</h4>
+                    <p>Diferencia entre el nivel estático y el nivel dinámico, expresada en metros.</p>
+
+                    <h4>Radio de influencia</h4>
+                    <p>Distancia desde el pozo hasta donde se detecta descenso del nivel freático debido al bombeo.</p>
+
+                    <figure>
+                        <img src="../img/radio_influencia.png" alt="Esquema del radio de influencia en un pozo">
+                        <figcaption><em><strong>Esquema del cono de depresión y radio de influencia</strong></em></figcaption>
+                    </figure>
+
+                    <h3>Factores que influyen en la depresión</h3>
+                    <h4>Características del acuífero</h4>
                     <ul>
-                        <li><strong>Permeabilidad del terreno:</strong> Un terreno con mayor permeabilidad requerirá más pozos y bombas más potentes para lograr la misma depresión.</li>
-                        <li><strong>Profundidad de la napa:</strong> La profundidad de la napa freática influye en la profundidad de las perforaciones y la potencia de las bombas.</li>
-                        <li><strong>Caudal de bombeo:</strong> El caudal de bombeo debe ser suficiente para evacuar el agua subterránea y mantener el nivel freático deseado.</li>
-                        <li><strong>Impacto ambiental:</strong> Se debe evaluar el impacto ambiental de la depresión de la napa, especialmente en áreas cercanas a fuentes de agua potable.</li>
-                        <li><strong>Permisos y regulaciones:</strong> Es importante obtener los permisos necesarios de las autoridades competentes antes de realizar cualquier tipo de perforación para deprimir la napa freática.</li>
+                        <li><strong>Transmisividad (T):</strong> Capacidad de transmitir agua</li>
+                        <li><strong>Coeficiente de almacenamiento (S):</strong> Volumen de agua liberado por unidad de área</li>
+                        <li><strong>Espesor saturado:</strong> Altura de la columna de agua</li>
+                        <li><strong>Permeabilidad (K):</strong> Facilidad de paso del agua</li>
+                        <li><strong>Heterogeneidad:</strong> Variaciones en las propiedades hidráulicas</li>
                     </ul>
 
-                    <h3>¿Qué es el radio de influencia de un pozo?</h3>
-                    <figure>
-                        <img src="../img/radio_influencia.png" alt="Radio de influencia de un pozo">
-                    </figure>
-                    
-                    <p>El radio de influencia es la distancia del centro del pozo hasta el punto donde el abatimiento tiende a cero.</p>
+                    <h4>Características del pozo</h4>
+                    <ul>
+                        <li><strong>Caudal de bombeo (Q):</strong> Volumen extraído por unidad de tiempo</li>
+                        <li><strong>Diámetro del pozo:</strong> Afecta las pérdidas por entrada</li>
+                        <li><strong>Penetración parcial:</strong> Si el pozo no atraviesa todo el acuífero</li>
+                        <li><strong>Estado del filtro:</strong> Eficiencia de la zona de captación</li>
+                        <li><strong>Desarrollo:</strong> Grado de limpieza de la zona filtro</li>
+                    </ul>
 
-                    <h3>¿Cómo se calcula el radio de influencia de un pozo?</h3>
-                    <p>Se obtiene como cociente entre la transmisividad <em>T</em> y el espesor del acuífero <em>b</em>. K = T/b y sus dimensiones serán L/T, es decir, m/día. La <em>K</em> es una medida de las características texturales del acuífero pero no representa por sí misma la capacidad de ceder agua.</p>
+                    <h4>Condiciones de contorno</h4>
+                    <ul>
+                        <li><strong>Presencia de ríos:</strong> Fuentes de recarga</li>
+                        <li><strong>Límites impermeables:</strong> Barreras al flujo</li>
+                        <li><strong>Otros pozos:</strong> Interferencia entre extracciones</li>
+                        <li><strong>Recarga natural:</strong> Infiltración de precipitaciones</li>
+                    </ul>
+
+                    <h3>Ecuaciones fundamentales</h3>
+                    <h4>Ecuación de Theis (acuífero confinado)</h4>
+                    <p>s = (Q/4πT) × W(u)</p>
+                    <p>donde:</p>
+                    <ul>
+                        <li>s = depresión (m)</li>
+                        <li>Q = caudal (m³/s)</li>
+                        <li>T = transmisividad (m²/s)</li>
+                        <li>W(u) = función del pozo</li>
+                        <li>u = r²S/4Tt</li>
+                    </ul>
+
+                    <h4>Ecuación de Dupuit (acuífero libre en equilibrio)</h4>
+                    <p>s = (Q/2πK) × ln(R/r)</p>
+                    <p>donde:</p>
+                    <ul>
+                        <li>K = permeabilidad (m/s)</li>
+                        <li>R = radio de influencia (m)</li>
+                        <li>r = distancia al pozo (m)</li>
+                    </ul>
+
+                    <h3>Tipos de flujo</h3>
+                    <h4>Flujo transitorio</h4>
+                    <p>Período inicial donde la depresión aumenta con el tiempo hasta alcanzar un equilibrio dinámico.</p>
+                    <ul>
+                        <li>Expansión continua del cono de depresión</li>
+                        <li>Duración: minutos a días según características del acuífero</li>
+                        <li>Requiere análisis tiempo-dependiente</li>
+                    </ul>
+
+                    <h4>Flujo estacionario</h4>
+                    <p>Condición de equilibrio donde la depresión se mantiene constante en el tiempo.</p>
+                    <ul>
+                        <li>Balance entre extracción y recarga</li>
+                        <li>Cono de depresión estabilizado</li>
+                        <li>Análisis simplificado con ecuaciones de equilibrio</li>
+                    </ul>
+
+                    <h3>Métodos de evaluación</h3>
+                    <h4>Pruebas de bombeo</h4>
+                    <p>Procedimiento estándar para determinar parámetros hidráulicos:</p>
+                    <ol>
+                        <li><strong>Preparación:</strong> Instalación de piezómetros de observación</li>
+                        <li><strong>Medición de niveles estáticos:</strong> Establecer línea base</li>
+                        <li><strong>Bombeo a caudal constante:</strong> Típicamente 24-72 horas</li>
+                        <li><strong>Medición de depresiones:</strong> En pozo bombeante y piezómetros</li>
+                        <li><strong>Recuperación:</strong> Medición post-bombeo</li>
+                        <li><strong>Análisis de datos:</strong> Aplicación de métodos interpretativos</li>
+                    </ol>
+
+                    <h4>Pruebas escalonadas</h4>
+                    <p>Bombeo a diferentes caudales para determinar:</p>
+                    <ul>
+                        <li>Pérdidas por entrada al pozo</li>
+                        <li>Caudal óptimo de operación</li>
+                        <li>Eficiencia del pozo</li>
+                        <li>Límites de extracción sostenible</li>
+                    </ul>
+
+                    <h3>Análisis de datos</h3>
+                    <h4>Método de Cooper-Jacob</h4>
+                    <p>Simplificación de la ecuación de Theis para tiempos largos:</p>
+                    <p>s = (Q/4πT) × ln(2.25Tt/r²S)</p>
+                    <ul>
+                        <li>Gráfico semilogarítmico tiempo vs. depresión</li>
+                        <li>Pendiente permite calcular transmisividad</li>
+                        <li>Intercepto determina almacenamiento</li>
+                    </ul>
+
+                    <h4>Método de Neuman</h4>
+                    <p>Específico para acuíferos libres considerando:</p>
+                    <ul>
+                        <li>Drenaje gravitacional retardado</li>
+                        <li>Cambio de almacenamiento</li>
+                        <li>Curvas tipo características</li>
+                    </ul>
+
+                    <h3>Factores que afectan la eficiencia</h3>
+                    <h4>Pérdidas por entrada</h4>
+                    <p>Depresión adicional debido a:</p>
+                    <ul>
+                        <li>Convergencia del flujo hacia el pozo</li>
+                        <li>Turbulencia en la zona de filtro</li>
+                        <li>Obstrucciones parciales</li>
+                        <li>Diseño inadecuado del filtro</li>
+                    </ul>
+
+                    <h4>Caudal específico</h4>
+                    <p>Relación entre caudal y depresión (Q/s):</p>
+                    <ul>
+                        <li>Indicador de eficiencia del pozo</li>
+                        <li>Permite comparar diferentes pozos</li>
+                        <li>Detectar deterioro en el tiempo</li>
+                        <li>Optimizar caudal de operación</li>
+                    </ul>
+
+                    <h3>Interferencia entre pozos</h3>
+                    <h4>Superposición de efectos</h4>
+                    <p>Cuando varios pozos operan simultáneamente:</p>
+                    <ul>
+                        <li>Los conos de depresión se superponen</li>
+                        <li>Aumenta la depresión total</li>
+                        <li>Reduce el caudal específico</li>
+                        <li>Requiere análisis conjunto</li>
+                    </ul>
+
+                    <h4>Distancia mínima entre pozos</h4>
+                    <p>Criterios para evitar interferencia excesiva:</p>
+                    <ul>
+                        <li>Función del radio de influencia</li>
+                        <li>Típicamente 2-3 veces el radio de influencia</li>
+                        <li>Considerar caudales relativos</li>
+                        <li>Evaluar mediante modelación</li>
+                    </ul>
+
+                    <h3>Sostenibilidad de la extracción</h3>
+                    <h4>Caudal sostenible</h4>
+                    <p>Máximo caudal que puede extraerse sin:</p>
+                    <ul>
+                        <li>Agotar el acuífero</li>
+                        <li>Causar subsidencia del terreno</li>
+                        <li>Afectar pozos vecinos</li>
+                        <li>Deteriorar la calidad del agua</li>
+                    </ul>
+
+                    <h4>Monitoreo a largo plazo</h4>
+                    <ul>
+                        <li>Medición regular de niveles dinámicos</li>
+                        <li>Control del caudal específico</li>
+                        <li>Análisis de tendencias</li>
+                        <li>Ajuste de caudales según necesidad</li>
+                    </ul>
+
+                    <h3>Optimización del sistema</h3>
+                    <h4>Selección del caudal óptimo</h4>
+                    <p>Balance entre:</p>
+                    <ul>
+                        <li>Satisfacción de demanda</li>
+                        <li>Eficiencia energética</li>
+                        <li>Preservación del acuífero</li>
+                        <li>Vida útil del equipo</li>
+                    </ul>
+
+                    <h4>Mejoras en la eficiencia</h4>
+                    <ul>
+                        <li>Desarrollo adicional del pozo</li>
+                        <li>Limpieza química del filtro</li>
+                        <li>Optimización del diseño de la bomba</li>
+                        <li>Control automático de caudales</li>
+                    </ul>
+
+                    <h3>Modelación numérica</h3>
+                    <h4>Modelos matemáticos</h4>
+                    <p>Herramientas para simular:</p>
+                    <ul>
+                        <li>Comportamiento del acuífero</li>
+                        <li>Escenarios de extracción</li>
+                        <li>Interferencia entre pozos</li>
+                        <li>Efectos a largo plazo</li>
+                    </ul>
+
+                    <h4>Software especializado</h4>
+                    <ul>
+                        <li>MODFLOW</li>
+                        <li>FEFLOW</li>
+                        <li>GMS (Groundwater Modeling System)</li>
+                        <li>Visual MODFLOW</li>
+                    </ul>
+
+                    <h3>Consideraciones ambientales</h3>
+                    <ul>
+                        <li>Impacto en ecosistemas dependientes</li>
+                        <li>Afectación de humedales</li>
+                        <li>Intrusión salina en zonas costeras</li>
+                        <li>Subsidencia del terreno</li>
+                        <li>Competencia con otros usuarios</li>
+                    </ul>
+
+                    <h3>Recomendaciones operativas</h3>
+                    <ul>
+                        <li>Operar dentro del caudal sostenible</li>
+                        <li>Mantener registro detallado de extracciones</li>
+                        <li>Realizar mantenimiento preventivo regular</li>
+                        <li>Monitorear niveles en pozos de observación</li>
+                        <li>Implementar sistemas de control automático</li>
+                        <li>Capacitar operadores en gestión eficiente</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -102,8 +305,6 @@
 
     <!-- Scripts -->
     <script>
-        
-        
         // Smooth scroll para enlaces internos
         document.querySelectorAll('a[href^="../index.html#"]').forEach(link => {
             link.addEventListener('click', function(e) {
