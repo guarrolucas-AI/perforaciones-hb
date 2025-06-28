@@ -1,16 +1,546 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perforaciones HB - Servicios profesionales de perforación de pozos de agua, mantenimiento y reparación. Máquinas especializadas para espacios reducidos.">
+    <title>Perforaciones HB - Servicios Profesionales de Perforación</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcZy2krAAAAAFb-zqOI38cQ7yK3Bht6xO4bx1_M"></script>
+
+    <style>
+        /* Adjust icon sizes for better proportionality */
+        .service-icon i {
+            font-size: 2.5em; /* Adjust this value as needed */
+        }
+		.spoiler-icon i {
+            font-size: 2em; /* Adjust this value as needed */
+        }
+    </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Header fijo con navegación -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-title-container">
+                    <img src="img/Drillmachine-papa.png" alt="Máquina de perforar" class="company-logo">
+                    <div class="company-name">
+                        <div class="company-name-line">Perforaciones</div>
+                        <div class="company-name-line">HB</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="#notas-tecnicas" class="nav-link">Notas Técnicas</a></li>
+                        <li><a href="#fortalezas" class="nav-link">Quienes somos</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
 
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Sección Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Servicios profesionales de Perforación</h2>
+                    <p class="hero-description">
+                        Con más de 40 años de trayectoria en el mercado, somos especialistas en la realización de pozos para extracción de agua para abastecimiento humano, industrial y agrícola.
+
+                    </p>
+                    <a href="#contacto" class="cta-button">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section class="services" id="servicios">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+
+                <!-- Spoiler de Perforaciones -->
+                <div class="service-spoiler">
+                    <button class="spoiler-header" type="button" data-target="perforaciones">
+                        <div class="spoiler-title">
+                            <div class="spoiler-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <h3>Perforaciones</h3>
+                        </div>
+                        <div class="spoiler-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="spoiler-content" id="perforaciones">
+                        <div class="services-grid">
+                            <!-- Servicio 1 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Residenciales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-home"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Residenciales</h4>
+                                            <p class="service-description">
+                                                Perforaciones diseñadas para extraer agua para consumo humano*, riego y piscinas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Servicio 2 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Industriales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-industry"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Industriales</h4>
+                                            <p class="service-description">
+                                                Aplicaciones con caudales elevados: suministro para procesos industriales, enfriamiento de maquinaria y consumo animal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Servicio 3 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Comerciales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-bag-shopping"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Comerciales</h4>
+                                            <p class="service-description">
+                                                Perforaciones diseñadas para abastecer todo tipo de comercios, edificios, oficinas, centros deportivos y espacios recreativos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Servicio 4 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Agrícola</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-seedling"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Agrícola</h4>
+                                            <p class="service-description">
+                                                Aplicaciones con caudales elevados: suministro para riego, producción animal y vegetal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Servicio 5 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Especiales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-crosshairs"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Especiales</h4>
+                                            <p class="service-description">
+                                                Pozos para freatímetros, jabalinas y depresión de napas en excavaciones de sótanos, cimentaciones y otro tipo de construcciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spoiler de Riego -->
+                <div class="service-spoiler">
+                    <button class="spoiler-header" type="button" data-target="riego">
+                        <div class="spoiler-title">
+                            <div class="spoiler-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3>Riego</h3>
+                        </div>
+                        <div class="spoiler-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="spoiler-content" id="riego">
+                        <div class="services-grid">
+                            <!-- Riego 1 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Residenciales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-home"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Residenciales</h4>
+                                            <p class="service-description">
+                                                Sistemas de riego para césped, plantas y canteros.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Riego 2 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Industriales</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-industry"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Industriales</h4>
+                                            <p class="service-description">
+                                                Sistemas de riego para enfriamiento de galpones industriales y desinfección sanitaria.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Riego 3 -->
+                            <div class="service-item">
+                                <div class="service-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <h4 class="service-title">Agrícola</h4>
+                                            <div class="service-icon">
+                                                <i class="fas fa-seedling"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <h4 class="service-title">Agrícola</h4>
+                                            <p class="service-description">
+                                                Sistemas de riego para enfriamiento de galpones de producción animal, abastecimiento de quintas de hortalizas, campos de siembra y pasturas y desinfección sanitaria.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Notas Técnicas -->
+        <section class="technical-notes" id="notas-tecnicas">
+            <div class="container">
+                <h2 class="section-title">Notas Técnicas</h2>
+                <p class="notes-description">Información técnica especializada sobre perforación y manejo de aguas subterráneas</p>
+                <div class="notes-grid">
+                    <!-- Nota 1 -->
+                    <div class="note-card" onclick="window.open('notas/acuiferos.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Acuíferos</h3>
+                            <p class="note-description">Formaciones geológicas que contienen y transmiten agua subterránea en cantidades significativas.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 2 -->
+                    <div class="note-card" onclick="window.open('notas/como-perforar.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Cómo perforar</h3>
+                            <p class="note-description">Guía completa sobre técnicas y procedimientos para la perforación de pozos de agua.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 3 -->
+                    <div class="note-card" onclick="window.open('notas/depresion-napa.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Depresión de napa</h3>
+                            <p class="note-description">Fenómeno de descenso del nivel freático y sus implicaciones en la extracción de agua.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 4 -->
+                    <div class="note-card" onclick="window.open('notas/freatimetros.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Freatímetros</h3>
+                            <p class="note-description">Instrumentos para medir el nivel del agua subterránea y monitorear pozos de agua.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 5 -->
+                    <div class="note-card" onclick="window.open('notas/instalacion-bomba.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Instalación de bomba</h3>
+                            <p class="note-description">Procedimientos técnicos para la correcta instalación de sistemas de bombeo en pozos.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 6 -->
+                    <div class="note-card" onclick="window.open('notas/perforacion-percusion.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Perforación por percusión</h3>
+                            <p class="note-description">Técnica tradicional de perforación mediante impactos repetitivos para atravesar formaciones.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 7 -->
+                    <div class="note-card" onclick="window.open('notas/rotacion-inyeccion.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Perforado por rotación e inyección de agua</h3>
+                            <p class="note-description">Método moderno de perforación que utiliza rotación y fluidos para avanzar eficientemente.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 8 -->
+                    <div class="note-card" onclick="window.open('notas/pozo-filtro.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Pozo con filtro</h3>
+                            <p class="note-description">Diseño y construcción de pozos con sistemas de filtración para mejorar la calidad del agua.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota 9 -->
+                    <div class="note-card" onclick="window.open('notas/pozo-encamisado.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Pozo encamisado sin filtro</h3>
+                            <p class="note-description">Construcción de pozos completamente revestidos para máxima protección y estabilidad.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Nota 10 -->
+                    <div class="note-card" onclick="window.open('notas/riego-aspersion.html', '_blank')">
+                        <div class="note-content">
+                            <h3 class="note-title">Riego por aspersión</h3>
+                            <p class="note-description">Sistemas de riego automatizado para aplicaciones agrícolas e industriales.</p>
+                            <div class="note-footer">
+                                <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Fortalezas -->
+        <section class="strengths" id="fortalezas">
+            <div class="container">
+                <div class="strengths-content">
+                    <div class="strengths-text">
+                        <h2 class="section-title">Quienes somos</h2>
+                        <div class="strength-item">
+                            <div class="strength-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="strength-content">
+                                <h3>Trabajo de calidad</h3>
+                                <p>
+                                    Recibimos asesoramiento técnico/legal tanto del INA (Instituto Nacional del Agua) como de ADA (Autoridad del Agua de la Provincia de Buenos Aires).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strength-item">
+                            <div class="strength-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="strength-content">
+                                <h3>Experiencia Comprobada</h3>
+                                <p>
+                                    Más de 40 años de experiencia en el sector nos avalan; hemos llevado a cabo perforaciones exitosas tanto en Argentina como en Uruguay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section class="contact" id="contacto">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+5491169924588" class="contact-link">+54 9 11 6992 4588</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:info@perforacioneshb.com.ar" class="contact-link">info@perforacioneshb.com.ar</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ubicación</h4>
+                                <a href="https://maps.app.goo.gl/7BXK86sht4iQJJ629" target="_blank" rel="noopener noreferrer" class="contact-link">Luis Guillón, Esteban Echeverría, Buenos Aires.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="submit-button" id="submit-btn">
+                                <span class="button-text">Enviar Mensaje</span>
+                                <span class="button-loader" id="button-loader">Enviando...</span>
+                            </button>
+                        </form>
+
+                        <!-- Mensajes de estado -->
+                        <div class="form-message success" id="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <p>¡Mensaje enviado correctamente! Te contactaremos pronto.</p>
+                        </div>
+
+                        <div class="form-message error" id="error-message">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>Error al enviar el mensaje. Por favor, inténtalo de nuevo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5491169924588?text=Hola,%20me%20interesa%20solicitar%20información%20sobre%20sus%20servicios%20de%20perforación" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="disclaimer">
+                <p class="disclaimer-text">
+                    <strong>*</strong> Para verificar la aptitud del agua para consumo humano, es imprescindible realizar los análisis físico-químicos y bacteriológicos correspondientes según las normativas vigentes. Perforaciones HB no garantiza la calidad del agua extraída sin los estudios analíticos apropiados realizados por laboratorios habilitados.
+                </p>
+            </div>
+            <p class="footer-text">
+                © 2025 Perforaciones HB. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
