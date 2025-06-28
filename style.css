@@ -623,7 +623,14 @@ body {
 
 .technical-note-content {
   padding: var(--spacing-3xl) 0;
+  padding-top: calc(160px + var(--spacing-xl));
   min-height: calc(100vh - 200px);
+}
+
+@media (min-width: 769px) {
+  .technical-note-content {
+    padding-top: calc(140px + var(--spacing-xl));
+  }
 }
 
 .note-header {
@@ -942,6 +949,11 @@ body {
     margin-bottom: var(--spacing-xl);
   }
 
+  /* Páginas individuales de notas técnicas móvil */
+  .technical-note-content {
+    padding-top: calc(120px + var(--spacing-sm));
+  }
+
   /* Contacto móvil */
   .contact-content {
     display: flex !important;
@@ -1109,6 +1121,11 @@ body {
   /* Imágenes aún más pequeñas en pantallas muy pequeñas */
   .note-body img {
     max-width: calc(100vw - 1rem);
+  }
+
+  /* Páginas individuales de notas técnicas móvil muy pequeño */
+  .technical-note-content {
+    padding-top: calc(110px + var(--spacing-sm));
   }
 }
 
