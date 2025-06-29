@@ -405,7 +405,7 @@ body {
 }
 
 .service-title {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: 600;
   margin: 0 0 var(--spacing-md) 0;
   color: var(--secondary-darker);
@@ -497,13 +497,14 @@ body {
 .card-back .service-description {
   color: var(--white);
   line-height: 1.7;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   text-align: center;
 }
 
 .card-front .service-description {
   color: var(--gray);
   line-height: 1.7;
+  font-size: var(--font-size-lg);
 }
 
 /* Sección Notas Técnicas */
@@ -901,13 +902,13 @@ body {
   }
 
   .service-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     padding: var(--spacing-xs) var(--spacing-sm);
   }
 
   .card-back .service-description {
-    font-size: var(--font-size-base);
-    line-height: 1.5;
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
   }
 
   .disclaimer {
@@ -1101,13 +1102,13 @@ body {
   }
 
   .service-title {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-lg);
     padding: var(--spacing-xs);
   }
 
   .card-back .service-description {
-    font-size: var(--font-size-xs);
-    line-height: 1.4;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
   }
 
   .strength-item {
