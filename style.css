@@ -781,7 +781,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-blue);
-    z-index: 10000;
+    z-index: 99999;
     padding-top: 140px;
     box-sizing: border-box;
     opacity: 0;
@@ -795,6 +795,7 @@ body {
     display: block;
     opacity: 1;
     visibility: visible;
+    z-index: 99999;
   }
 
   .nav-list {
@@ -829,7 +830,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 10001;
+    z-index: 100000;
   }
 
   /* Hero móvil */
@@ -1015,7 +1016,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    z-index: 10001;
+    z-index: 100000;
   }
 
   .nav {
@@ -1026,7 +1027,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-blue);
-    z-index: 10000;
+    z-index: 99999;
     padding-top: 120px;
     box-sizing: border-box;
     opacity: 0;
@@ -1040,6 +1041,7 @@ body {
     display: block;
     opacity: 1;
     visibility: visible;
+    z-index: 99999;
   }
 
   .hero {

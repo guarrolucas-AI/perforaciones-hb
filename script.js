@@ -45,8 +45,8 @@ function initMobileMenu() {
             document.body.style.overflow = 'hidden';
             
             // Asegurar que el menú esté por encima de todo
-            nav.style.zIndex = '10000';
-            if (mobileMenuBtn) mobileMenuBtn.style.zIndex = '10001';
+            nav.style.zIndex = '99999';
+            if (mobileMenuBtn) mobileMenuBtn.style.zIndex = '100000';
 
             // Cambiar icono del botón
             if (mobileMenuBtn) {
