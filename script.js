@@ -43,18 +43,6 @@ function initMobileMenu() {
             nav.classList.add('active');
             if (overlay) overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
-            
-            // Asegurar que el menú esté por encima de todo y forzar estilos
-            nav.style.position = 'fixed';
-            nav.style.top = '0';
-            nav.style.left = '0';
-            nav.style.right = '0';
-            nav.style.zIndex = '99999';
-            nav.style.display = 'block';
-            nav.style.visibility = 'visible';
-            nav.style.opacity = '1';
-            
-            if (mobileMenuBtn) mobileMenuBtn.style.zIndex = '100001';
 
             // Cambiar icono del botón
             if (mobileMenuBtn) {
@@ -70,16 +58,7 @@ function initMobileMenu() {
             if (overlay) overlay.classList.remove('active');
             document.body.style.overflow = '';
 
-            // Resetear estilos inline del menú
-            nav.style.position = '';
-            nav.style.top = '';
-            nav.style.left = '';
-            nav.style.right = '';
-            nav.style.display = '';
-            nav.style.visibility = '';
-            nav.style.opacity = '';
-
-            // Cambiar icono del botón - verificar que existe antes de cambiar
+            // Cambiar icono del botón
             if (mobileMenuBtn) {
                 const icon = mobileMenuBtn.querySelector('i');
                 if (icon) {
