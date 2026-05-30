@@ -762,6 +762,9 @@ button { font-family: inherit; }
 }
 .copyright { font-size: .8rem; opacity: .4; text-align: center; }
 
+/* Ocultar badge de reCAPTCHA (mencionado en footer/disclaimer) */
+.grecaptcha-badge { visibility: hidden !important; }
+
 /* === ANIMATE ON SCROLL === */
 .anim {
   opacity: 0;
