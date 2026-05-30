@@ -1,114 +1,128 @@
-﻿
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información técnica sobre riego por aspersión - Perforaciones HB">
+    <meta name="theme-color" content="#0a1628">
+    <title>Riego por aspersión | Perforaciones HB</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <link rel="shortcut icon" href="../favicon.svg">
-    <meta name="description" content="InformaciÃ³n tÃ©cnica sobre riego por aspersiÃ³n - Perforaciones HB">
-    <title>Riego por aspersiÃ³n - Notas TÃ©cnicas | Perforaciones HB</title>
-    
-    <!-- Estilos CSS -->
     <link rel="stylesheet" href="../style.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Phosphor Icons -->
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header con navegaciÃ³n -->
-    <header class="header">
+
+    <header class="header scrolled" id="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-title-container">
-                    <img src="../img/Drillmachine-papa.png" alt="MÃ¡quina de perforar" class="company-logo">
-                    <div class="company-name">
-                        <div class="company-name-line">Perforaciones</div>
-                        <div class="company-name-line">HB</div>
-                    </div>
-                </div>
-                <nav class="nav">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <img src="../img/Drillmachine-papa.png" alt="Perforaciones HB" class="logo-img">
+                    <span class="logo-text">Perforaciones <strong>HB</strong></span>
+                </a>
+                <nav class="nav" id="nav">
                     <ul class="nav-list">
                         <li><a href="../index.html#servicios" class="nav-link">Servicios</a></li>
-                        <li><a href="../index.html#notas-tecnicas" class="nav-link">Notas TÃ©cnicas</a></li>
-                        <li><a href="../index.html#fortalezas" class="nav-link">Quienes somos</a></li>
+                        <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="../index.html#notas-tecnicas" class="nav-link">Notas T&eacute;cnicas</a></li>
                         <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
                     </ul>
+                    <a href="https://wa.me/5491169924588?text=Hola,%20quiero%20solicitar%20un%20presupuesto" class="nav-cta" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Presupuesto
+                    </a>
                 </nav>
-                <a href="../index.html" class="back-button">
-                    <i class="ph ph-arrow-left"></i>
-                    Volver al inicio
+                <button class="menu-btn" id="mobile-menu-btn" aria-label="Men&uacute;" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main class="nota-main">
+        <div class="nota-back">
+            <div class="container">
+                <a href="../index.html#notas-tecnicas" class="nota-back-link">
+                    <i class="fas fa-arrow-left"></i> Volver a Notas T&eacute;cnicas
                 </a>
             </div>
         </div>
-    </header>
 
-    <!-- Contenido principal -->
-    <main class="main">
-        <section class="technical-note-content">
+        <article class="nota-article">
             <div class="container">
-                <div class="note-header">
-                    <h1 class="note-main-title">Riego por aspersiÃ³n</h1>
-                    <p class="note-subtitle">CÃ¡lculo y pasos detallados para riego por aspersiÃ³n</p>
-                </div>
-
-                <div class="note-body">
-                    <p>Para calcular el riego por aspersiÃ³n se necesita determinar el Ã¡rea a regar, la lÃ¡mina de riego deseada, el caudal de los aspersores y el tiempo de riego necesario. La fÃ³rmula bÃ¡sica es: <em>Tiempo de riego = (Ãrea Ã— LÃ¡mina de riego) / Caudal de los aspersores</em>. Se recomienda usar un pluviÃ³metro para medir la precipitaciÃ³n real de los aspersores y ajustar el tiempo de riego en consecuencia. </p>
+                <header class="nota-header">
+                    <h1>Riego por aspersión</h1>
+                    <p class="nota-subtitle">Cálculo y pasos detallados para riego por aspersión</p>
+                </header>
+                <div class="nota-body">
+<p>Para calcular el riego por aspersión se necesita determinar el área a regar, la lámina de riego deseada, el caudal de los aspersores y el tiempo de riego necesario. La fórmula básica es: <em>Tiempo de riego = (Ãrea Ã— Lámina de riego) / Caudal de los aspersores</em>. Se recomienda usar un pluviómetro para medir la precipitación real de los aspersores y ajustar el tiempo de riego en consecuencia. </p>
 
                     <h3>Pasos detallados</h3>
                     <ol>
-                        <li><strong>Determinar el Ã¡rea a regar:</strong> Mide el largo y ancho del jardÃ­n para calcular el Ã¡rea total en metros cuadrados. </li>
-                        <li><strong>Definir la lÃ¡mina de riego deseada:</strong> La lÃ¡mina de riego es la cantidad de agua que se necesita aplicar al suelo (generalmente en milÃ­metros). Investiga las necesidades de agua de las plantas y el tipo de suelo; un valor comÃºn es 6Â mm por riego. </li>
-                        <li><strong>Conocer el caudal de los aspersores:</strong> El caudal es la cantidad de agua que expulsa cada aspersor por unidad de tiempo (L/s o mÂ³/h). EstÃ¡ en la ficha tÃ©cnica o mide llenando un recipiente y cronometrando. </li>
-                        <li><strong>Calcular el tiempo de riego:</strong> Aplica la fÃ³rmula: <em>Tiempo (s) = (ÃreaÂ mÂ² Ã— LÃ¡minaÂ mm) / (CaudalÂ L/s)</em>. Convierte mÂ³/h si es necesario. </li>
-                        <li><strong>Ajustar el tiempo de riego:</strong> Utiliza un pluviÃ³metro para verificar la precipitaciÃ³n real y ajusta el tiempo para compensar diferencias. </li>
-                        <li><strong>Considerar la presiÃ³n del agua:</strong> Asegura que la presiÃ³n sea suficiente para cubrir el Ã¡rea deseada y evitar zonas secas. </li>
-                        <li><strong>Distribuir los aspersores:</strong> ColÃ³calos de manera que se solapen, garantizando una cobertura uniforme. </li>
-                        <li><strong>Considerar el tipo de suelo y clima:</strong> El suelo (arenoso, arcilloso) y clima (viento, temperatura, humedad) influyen en la frecuencia y duraciÃ³n del riego. </li>
-                        <li><strong>Programar el riego:</strong> Ajusta horarios y frecuencia segÃºn la Ã©poca del aÃ±o y necesidades de las plantas. </li>
+                        <li><strong>Determinar el área a regar:</strong> Mide el largo y ancho del jardín para calcular el área total en metros cuadrados. </li>
+                        <li><strong>Definir la lámina de riego deseada:</strong> La lámina de riego es la cantidad de agua que se necesita aplicar al suelo (generalmente en milímetros). Investiga las necesidades de agua de las plantas y el tipo de suelo; un valor común es 6Â mm por riego. </li>
+                        <li><strong>Conocer el caudal de los aspersores:</strong> El caudal es la cantidad de agua que expulsa cada aspersor por unidad de tiempo (L/s o mÂ³/h). Está en la ficha técnica o mide llenando un recipiente y cronometrando. </li>
+                        <li><strong>Calcular el tiempo de riego:</strong> Aplica la fórmula: <em>Tiempo (s) = (ÃreaÂ mÂ² Ã— LáminaÂ mm) / (CaudalÂ L/s)</em>. Convierte mÂ³/h si es necesario. </li>
+                        <li><strong>Ajustar el tiempo de riego:</strong> Utiliza un pluviómetro para verificar la precipitación real y ajusta el tiempo para compensar diferencias. </li>
+                        <li><strong>Considerar la presión del agua:</strong> Asegura que la presión sea suficiente para cubrir el área deseada y evitar zonas secas. </li>
+                        <li><strong>Distribuir los aspersores:</strong> Colócalos de manera que se solapen, garantizando una cobertura uniforme. </li>
+                        <li><strong>Considerar el tipo de suelo y clima:</strong> El suelo (arenoso, arcilloso) y clima (viento, temperatura, humedad) influyen en la frecuencia y duración del riego. </li>
+                        <li><strong>Programar el riego:</strong> Ajusta horarios y frecuencia según la época del año y necesidades de las plantas. </li>
                     </ol>
                 </div>
+                <div class="nota-cta">
+                    <p>&iquest;Ten&eacute;s dudas? Nuestros especialistas pueden asesorarte sin cargo.</p>
+                    <div class="nota-cta-actions">
+                        <a href="https://wa.me/5491169924588?text=Hola,%20quiero%20consultar%20sobre%20pozos%20de%20agua" class="btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                        </a>
+                        <a href="../index.html#contacto" class="btn-outline-dark">Enviar mensaje</a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </article>
     </main>
 
-    <!-- BotÃ³n flotante de WhatsApp -->
-    <a href="https://wa.me/5491169924588?text=Hola,%20me%20interesa%20solicitar%20informaciÃ³n%20sobre%20sus%20servicios%20de%20perforaciÃ³n" 
-       class="whatsapp-float" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Contactar por WhatsApp">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <a href="https://wa.me/5491169924588?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20perforaci%C3%B3n"
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
         </svg>
     </a>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">
-                Â© 2025 Perforaciones HB. Todos los derechos reservados.
-            </p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../img/Drillmachine-papa.png" alt="Perforaciones HB">
+                        <span>Perforaciones <strong>HB</strong></span>
+                    </div>
+                    <p>Especialistas en perforaci&oacute;n de pozos de agua con m&aacute;s de 40 a&ntilde;os de experiencia en Argentina y Uruguay.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="../index.html#servicios">Residenciales</a></li>
+                        <li><a href="../index.html#servicios">Industriales</a></li>
+                        <li><a href="../index.html#servicios">Comerciales</a></li>
+                        <li><a href="../index.html#servicios">Agr&iacute;colas</a></li>
+                        <li><a href="../index.html#servicios">Riego</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+5491169924588">+54 9 11 6992 4588</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@perforacioneshb.com.ar">info@perforacioneshb.com.ar</a></p>
+                    <p><i class="fas fa-location-dot"></i> Luis Guill&oacute;n, Bs. As.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Perforaciones HB. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        
-        
-        // Smooth scroll para enlaces internos
-        document.querySelectorAll('a[href^="../index.html#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = this.href;
-            });
-        });
-    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
-
